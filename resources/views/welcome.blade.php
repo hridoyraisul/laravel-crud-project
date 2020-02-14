@@ -50,6 +50,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('write.post') }}">Write Post</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('addstu') }}">Add Student</a>
+                </li>
             </ul>
         </div>
     </div>

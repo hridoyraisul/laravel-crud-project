@@ -36,3 +36,8 @@ Route::get('/view/category/{id}', 'CategoryController@viewCategory');
 Route::get('/delete/category/{id}','CategoryController@deleteCategory');
 Route::get('/edit/category/{id}','CategoryController@editCategory');
 Route::post('/update/category/{id}', 'CategoryController@updateCategory');
+
+//student route
+Route::get('/add-student', 'StudentController@addStudent')->name('addstu');
+Route::post('/insert', 'StudentController@insertStudent')->name('insertstu');
+Route::get('/show-student', 'StudentController@showStudent')->name('showstu');
