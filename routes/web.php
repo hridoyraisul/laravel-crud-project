@@ -11,7 +11,6 @@
 |
 */
 
-
 Route::get('/page1', 'PostsController@show');
 Route::get('/', 'Controller@index');
 Route::get('/contact', 'Controller@contact')->name('contact');
@@ -27,7 +26,6 @@ Route::get('/edit/post/{id}','PostsController@editPost');
 Route::post('/update/post/{id}', 'PostsController@updatePost');
 Route::get('/delete/post/{id}','PostsController@deletePost');
 
-
 //category route
 Route::get('/add-category', 'CategoryController@addCategory')->name('add.category');
 Route::get('/show-category', 'CategoryController@showCategory')->name('show.category');
@@ -38,6 +36,10 @@ Route::get('/edit/category/{id}','CategoryController@editCategory');
 Route::post('/update/category/{id}', 'CategoryController@updateCategory');
 
 //student route
-Route::get('/add-student', 'StudentController@addStudent')->name('addstu');
-Route::post('/insert', 'StudentController@insertStudent')->name('insertstu');
-Route::get('/show-student', 'StudentController@showStudent')->name('showstu');
+Route::get('/add-student', 'StudentController@create')->name('addstu');
+Route::post('/insert', 'StudentController@store')->name('insertstu');
+Route::get('/all-student', 'StudentController@index')->name('showstu');
+Route::get('/view-student/{id}', 'StudentController@show');
+Route::get('/delete-student/{id}', 'StudentController@destroy');
+Route::get('/edit-student/{id}', 'StudentController@edit');
+Route::post('/update-student/{id}', 'StudentController@update');
