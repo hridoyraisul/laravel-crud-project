@@ -45,13 +45,13 @@
                     <a class="nav-link" href="{{ route('picture') }}">Pictures</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('contact') }}">Contact</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="{{ route('write.post') }}">Write Post</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('addstu') }}">Add Student</a>
+                    <a class="nav-link" href="{{ url('/employee') }}">Employee</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('addstu') }}">Student</a>
                 </li>
             </ul>
         </div>

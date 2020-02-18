@@ -13,7 +13,6 @@
 
 Route::get('/page1', 'PostsController@show');
 Route::get('/', 'Controller@index');
-Route::get('/contact', 'Controller@contact')->name('contact');
 Route::get('/about', 'Controller@about')->name('about');
 Route::get('/picture', 'Controller@picture')->name('picture');
 
@@ -43,3 +42,6 @@ Route::get('/view-student/{id}', 'StudentController@show');
 Route::get('/delete-student/{id}', 'StudentController@destroy');
 Route::get('/edit-student/{id}', 'StudentController@edit');
 Route::post('/update-student/{id}', 'StudentController@update');
+
+//employee route
+Route::resource('/employee', 'EmpController');
